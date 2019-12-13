@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\setlength{\makecvtitlenamewidth}{6cm}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Mar\'{i}a Bel\'{e}n} % Your first name
+\familyname{Cattaneo} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Av. Los Arrayanes 66, Local 7}{Villa la Angostura, Neuquen, Argentina}
+\phone{0810-220-0046}
+\email{belcattaneo@fiqus.coop}
+\homepage{fiqus.coop}{http://fiqus.coop} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2010--2018}{University}{Mechanical Engineering}
+{}{}{Universidad Tecnol\'{o}gica Nacional, Facultad Regional Buenos Aires.}
+\cventry{2007--2010}{University}{Food Engineering}
+{}{}{Universidad Nacional de Luj\'{a}n, Luj\'{a}n, Buenos Aires.}
+\cventry{2004--2006}{High School}{Specialized in Natural Sciences and Mathematics}{}{}{Instituto San Antonio (San Antonio de Padua, Buenos Aires).}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{In Fiqus}
+
+%------------------------------------------------
+\cventry{2019-Present}{Developer}{\textsc{FiqusLabs}}{Argentina}{}{FiqusLabs is an space where we research and test technologies we want to try or get to know.
+\newline{}\newline{}
+I've been researching and testing the following technologies:
+\newline{} Elixir, Python, React.
+\newline{}\newline{} Some of our released projects:
+}
+%------------------------------------------------
+%------------------------------------------------
+\cventry{2019}{Developer}{\textsc{argentiNat, Fundaci\'{o}n Vida Silvestre}}{Argentina}{}{Launched the iNaturalist node for Argentina. iNaturalist is a social network of people sharing biodiversity information.
+\newline{}\newline{}
+}
+%------------------------------------------------
+%------------------------------------------------
+\cventry{2016}{Developer}{\textsc{La Nacion}}{Argentina}{}{Developed several AWS Lambda functions to process 2019 national elections data for "La Nacion" journal.  
+\newline{}\newline{}
+Technologies used:
+\newline{} Python, PostgreSQL, Google Spreadsheets.}
+
+%------------------------------------------------
+%------------------------------------------------
+\subsection{Before Fiqus}
+%------------------------------------------------
+\cventry{2017-2019}{IT Resources}{\textsc{Ssr Developer}}{}{}{}
+%------------------------------------------------
+\cvitem{-}{Swiss Medical Group\newline{} Projects: Develop the intranet web application. 
+\newline{} Tasks: Develop new features for the web application.
+\newline{}Technologies used: JBoss EAP, Red Hat JBoss BPM Suite, Red Hat JBoss Enterprise Web Server, Java, Backbone, Sybase }
+%------------------------------------------------
+
+\cventry{2017-2018}{Freelance Developer}{\textsc{Web Developer}}{}{}{}
+%------------------------------------------------
+\cvitem{-}{Finite Element Method for a flat metal plate Web App \newline{} Project: web application for the temperatures calculation in a metal plate given the edge conditions. \newline{} Tasks: developer, architecture and deployment.
+\newline{}Technologies used: Python, Django, jQuery, JavaScript, Heroku.}
+%------------------------------------------------
+\cvitem{-}{Custom Inventory Management Web App for Local Bussines \newline{} Project: web application to add, modify and delete customers, products and transactions. \newline{} Tasks: developer, architecture and deployment.
+\newline{}Technologies used: Python, Django, jQuery, JavaScript, Nginx, PostgreSQL, Cloudinary, Heroku.}
+%------------------------------------------------
+
+\cventry{2016-2017}{Florestan Technology}{\textsc{Ssr Engineer.}}{}{}{}
+%------------------------------------------------
+\cvitem{-} {Tasks: Calculation, analysis, mechanical design. \newline{}Technologies used: Office, SolidWorks, AutoCAD}
+%------------------------------------------------
+
+\cventry{2014-2015}{Ford Argentina}{\textsc{Quality trainee.}}{}{}{}
+%------------------------------------------------
+\cvitem{-} {Tasks: Internal and external quality indicators analysis in the PUMA diesel engine plant.}
+%------------------------------------------------
+
+\cventry{2013-2014}{Volkswagen Argentina}{\textsc{Analyst trainee.}}{}{}{}
+%------------------------------------------------
+\cvitem{-} {Tasks: Analysis and implementation of new projects for the VN Amarok. New projects analyst for the VW Suran. New technologies research. Market research.}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitemwithcomment{Intermediate}{Java}{}
+
+\cvitemwithcomment{Intermediate}{Python}{DJango}
+\cvitemwithcomment{Intermediate}{Javascript}{jQuery}
+\cvitemwithcomment{Intermediate}{Databases}{SQL Server, PostgreSQL}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Mothertongue}{Spanish}{}
+\cvitemwithcomment{Advanced}{English}{}
+\cvitemwithcomment{Intermediate}{German}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Oil Painting}{}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\setlength{\makecvtitlenamewidth}{4cm}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Lucas} % Your first name
+\familyname{Ferraro} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Cuenca 1554 oficina "P"}{Ciudad Aut\'{o}noma de Buenos Aires, Argentina}
+\phone{(+54 9 11) 4568 9390}
+\email{lferraro@fiqus.com}
+\homepage{fiqus.com}{http://fiqus.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Educaci\'{o}n}
+
+\cventry{2006--2014}{Universitario}{Ingenier\'{i}a en Sistemas de Informaci\'{o}n}
+{}{}{Universidad Tecnol\'{o}gica Nacional, Facultad Regional Buenos Aires.}
+\cventry{2001--2005}{Secundario}{Bachiller con orientaci\'{o}n en econom\'{i}na y gesti\'{o}n de las organizaciones}{}{}{Instituto de Educaci\'{o}n Cat\'{o}lica (Chacabuco, BsAs).}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia}
+
+\subsection{En Fiqus}
+
+%------------------------------------------------
+\cventry{-}{Desarrollador}{\textsc{NaturaSi}}{Italia}{}{Desarrollo de una aplicaci\'{o}n mobile en Android de productos, recetas, art\'{i}culos, eventos  y carro de compra relacionado a la producci\'{o}n de productos naturales.
+\newline{}\newline{}
+Tecnolog\'{i}as utilizadas:
+\newline{} Android, Material Design, Retrofit, Gson, Picasso, Butter Knife, Facebook SDK, Google Maps, Google Firebase (push notifications).
+}
+%------------------------------------------------
+\cventry{-}{Desarrollador}{\textsc{Intesa}}{Italia}{}{Desarrollo de una aplicaci\'{o}n mobile en Android de visualizaci\'{o}n de noticias, videos, encuestas relacionadas al \'{a}mbito financiero.
+\newline{}\newline{}
+Tecnolog\'{i}as utilizadas:
+\newline{} Android, Material Design, Retrofit, Gson, Picasso, Butter Knife, Brightcove video, Google Firebase (push notifications and deep linking).
+}
+%------------------------------------------------
+\cventry{-}{Desarrollador}{\textsc{Fiqus} - aquiles.com.ar}{Buenos Aires}{}{Aplicaci\'{o}n online para la confecci\'{o}n de facturas electr\'{o}nicas.
+\newline{}\newline{}
+Tecnolog\'{i}as utilizadas:
+\newline{} Python, Django, Ansible, Docker, javascript, Redis.
+\newline{}}
+%------------------------------------------------
+
+%------------------------------------------------
+\subsection{Antes de Fiqus}
+%------------------------------------------------
+\cventry{2014-2015}{Red Hat Argentina}{\textsc{Red Hat Platform Consultant/Red Hat Middleware Consultant}}{}{}{}
+%------------------------------------------------
+\cvitem{-}{Ministerio de Econom\'{i}a de la Naci\'{o}n\newline{} Proyectos: migraci\'{o}n a JBoss EWS (Apache) y JBoss BPM Suite. \newline{} Tareas: consultor\'{i}a de migraci\'{o}n a plataformas JBOSS EAP.
+\newline{}Tecnolog\'{i}as utilizadas: JBoss EAP, Red Hat JBoss BPM Suite, Red Hat JBoss Enterprise Web Server}
+%------------------------------------------------
+\cvitem{-}{Caja de Valores\newline{} Proyecto: Migraci\'{o}n JBoss \newline{} Tareas: consultor\'{i}a de migraci\'{o}n a plataformas JBOSS EAP.
+\newline{}Tecnolog\'{i}as utilizadas: JBoss EAP.}
+%------------------------------------------------
+\cvitem{-}{Banco de Chile BCI\newline{} Proyecto: Migraci\'{o}n JBoss \newline{} Tareas: automatizaci\'{o}n y documentaci\'{o}n de instalaci\'{o}n de productos Red Hat
+(JBoss EAP, Red Hat JBoss BPM Suite, Red Hat JBoss Fuse Service Works y
+JBoss Operations Network) mediante el uso de kickstarts (Red Hat Satellite).
+\newline{}Tecnolog\'{i}as utilizadas: JBoss EAP, Red Hat JBoss BPM Suite, Red Hat JBoss Fuse Service Works,
+JBoss Operations Network, Red Hat Satellite.}
+%------------------------------------------------
+\cvitem{-}{Jefatura de Gabinete de Ministros\newline{} Proyecto: Sistema digital de compras del gobierno nacional (ArCompra) \newline{} Tareas: desarrollo, l\'{i}der de equipo, arquitectura y consultor\'{i}a.
+\newline{}Tecnolog\'{i}as utilizadas: Java, javascript, JQuery, HTML, CSS, REST, Angular JS, RichFaces, JSF, JBoss Seam, EJB, CDI, Hibernate, JDBC, JPA, SQL Server, JUnit, Arquillian, Maven, Git, JBoss EAP, JBoss JBPM, JBoss BPM Suite, JBoss FSW.}
+%------------------------------------------------
+\cventry{2010-2014}{Epidata Consulting}{\textsc{Desarrollador, analista y arquitecto JAVA}}{}{}{}
+%------------------------------------------------
+\cvitem{-}{Jefatura de Gabinete de Ministros\newline{} Proyecto: Sistema digital de compras del gobierno nacional (ArCompra) \newline{} Tareas: desarrollo, l\'{i}der de equipo, arquitectura, administraci\'{o}n y mantenimiento de ambientes locales y soporte para ambientes del cliente.
+\newline{}Tecnolog\'{i}as utilizadas: Java, javascript, JQuery, HTML, CSS, RichFaces, JSF, JBoss Seam, EJB, CDI, Hibernate, JDBC, JPA, SQL Server, JUnit, Arquillian, Maven, Git, JBoss EAP, JBoss JBPM.}
+%------------------------------------------------
+\cvitem{-}{Swiss Medical Group\newline{} Proyectos: desarrollo y mantenimiento de sistemas de intranet\newline{} Tareas: desarrollo, an\'{a}lisis y l\'{i}der de equipo
+\newline{}Tecnolog\'{i}as utilizadas: Java, javascript, JQuery, HTML, CSS, RichFaces, JSF, JBoss Seam, EJB, CDI, Hibernate, JDBC, JPA, PostgreSQL, Sybase, JUnit, Arquillian, Maven, Git, JBoss EAP, JBoss JBPM, JBoss ESB.}
+%------------------------------------------------
+\cvitem{-}{AGEA\newline Proyecto: Aplicaci\'{o}n de Reportes para la planta de impresi\'{o}n del diario Clar\'{i}n, Ol\'{e} y otros\newline{} Tareas: desarrollo, an\'{a}lisis y arquitectura
+\newline{}Tecnolog\'{i}as utilizadas: Java, javascript, JQuery, HTML, CSS, Spring MVC, Spring, Hibernate, SQL Server, SQL Service Integration Services, JUnit, Maven, SVN, Apache Tomcat.}
+%------------------------------------------------
+\cvitem{-}{Red Link\newline{} Proyecto: Banca Empresas\newline{} Tareas: desarrollo
+\newline{}Tecnolog\'{i}as utilizadas: Java, javascript, JQuery, HTML, CSS, Spring MVC, Spring, Hibernate, Oracle, JUnit, Maven, SVN, Apache Tomcat.}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Conocimientos t\'{e}cnicos}
+
+\cvitemwithcomment{Avanzados}{Java}{Spring, JSF, EJB, CDI, JPA, JUnit}
+
+\cvitemwithcomment{Intermedios}{Python}{DJango}
+\cvitemwithcomment{}{Javascript}{jQuery, AngularJS}
+\cvitemwithcomment{}{Base de datos}{SQL Server, PostgreSQL, MongoDB}
+
+\cvitem{Basic}{C, C\#, Pascal, Smalltalk, Haskell, Prolog, Ruby, Ionic, Cassandra, Neo4j}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+
+\cvitemwithcomment{Espa\~{n}ol}{Nativo}{}
+\cvitemwithcomment{Ingles}{Intermedio}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Intereses}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Bandoneon}{}
+\cvlistdoubleitem{Bajo el\'{e}ctrico}{}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
